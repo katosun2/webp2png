@@ -2,4 +2,6 @@
 
 支持：``Chrome 30+``
 
+[Demo](http://tool.imiku.com/webp2png/)
+
 ## MIT
