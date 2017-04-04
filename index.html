@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>通过canvas 将 webp 转换 png 格式</title>
+	<style>
+		div,ul,li,p,span, input { padding:0; margin:0;}
+		.file{ width: 88px; height: 30px; line-height:30px; overflow:hidden;}
+		.file label{ cursor: pointer; width:100%; height:100%; text-align:center; display: block; color:#FFFFFF; background: #E8117F; border-radius:5px; -webkit-border-radius:5px; }
+		.file input{ clip: rect(0, 0, 0, 0); display:none; }
+		.drop_zone {margin: 20px 0; color:#666666; border: 3px dashed #40A7E3; width:100%; height: 200px; line-height:200px; text-align: center;  }
+		.drop_zone_hover { border-color: #E8117F; }
+	</style>
+	<script type="text/javascript" src="./DownloadCanvas.js/canvas-toBlob/canvas-toBlob.js"></script> 
+	<script type="text/javascript" src="./DownloadCanvas.js/canvg/rgbcolor.js"></script> 
+	<script type="text/javascript" src="./DownloadCanvas.js/canvg/StackBlur.js"></script>
+	<script type="text/javascript" src="./DownloadCanvas.js/canvg/canvg.js"></script> 
+	<script type="text/javascript" src="./DownloadCanvas.js/FileSaver/FileSaver.js"></script> 
+	<script type="text/javascript" src="./DownloadCanvas.js/DownloadCanvas.js"></script> 
+</head>
+<body>
+<div class="file">
+	<label for="up_file">上传图片</label>
+	<input type="file" name="up_file" value="" id="up_file" accept="image/*" multiple  />
+</div>
+<div class="drop_zone" id="drop_zone">拖拽上传</div>
+<p>请在支持 <strong>.webp</strong> 格式的浏览器进行转换，如 <strong>Chrome</strong></p>
+<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
